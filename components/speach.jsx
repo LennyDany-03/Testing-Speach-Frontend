@@ -60,7 +60,7 @@ const SpeachComponent = () => {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:8000/api/speech/evaluate", {
+      const res = await fetch("https://testing-speach-backend.onrender.com/api/speech/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ transcript: text }),
